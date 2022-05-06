@@ -1,0 +1,31 @@
+h1 {
+    color: orange;
+    font-size: 65px;
+    font-family: sans-serif;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+body {
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(15, 3, 56);
+    font-style: italic;
+    line-height: 7ex;
+
+}
+.uniform-color {
+    color: rgb(231, 201, 31);
+}
+#l1 {
+    background-color: green;
+}
+#l2 {
+    background-color: rgb(49, 27, 1);
+}
+#l3 {
+    background-color: rgb(168, 143, 0);
+}
