@@ -3,7 +3,6 @@ const bithCity = "São Bernardo do Campo";
 var bithYear = 1999;
 
 var bithYear = 2030;
-const bithCity = Diadema
 
 console.log(myName);
 console.log(bithCity);
