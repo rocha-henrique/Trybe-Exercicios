@@ -1,13 +1,20 @@
-let father = document.querySelector('body');
 
-let newTag = document.createElement('h1');
+let father = document.querySelector('body');
+let fatherMain = document.querySelector('main');
+let fatherSection = document.querySelector('section');
+
+
+newTag = document.createElement('h1');
 newTag.innerText = 'Exercício 5.2';
 
 father.appendChild(newTag);
 
 
-let newMain = document.createElement('main');
+newMain = document.createElement('main');
 newMain.createAttribute = 'main-content';
 
+father.appendChild(newMain)
 
-father.appendChild(newMain);
+
+newSection = document.createElement('section')
+father.appendChild(newSection)
