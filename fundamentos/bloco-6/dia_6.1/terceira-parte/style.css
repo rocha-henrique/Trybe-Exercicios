@@ -1,0 +1,32 @@
+* {
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  padding: 15px;
+}
+body {
+  font-family: "Helvetica", "arial", sans-serif;
+  background-color: rgb(93, 96, 99);
+  color: rgb(93, 96, 99);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.option {
+  margin-top: 30px;
+  width: 30px;
+}
+
+.resp {
+  margin-top: 30px;
+  height: 120px;
+  resize: none;
+  width: 400px;
+}
+
+#firstCheck {
+  margin: 20px;
+}
+
+#secondCheck {
+  margin: 20px;
+}
