@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submeter Palestra</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container text-center">
+        <h1 class="display-3">Submeter Palestra</h1>
+        <p  class="lead"><em>Quer palestrar na nossa conferência? Preencha o formulário1</em></p>
+    </header>
+
+    <form action="" method="get" class="container">
+        <div  class="container mb-3">
+            <label for="full-name" class="form-label">Nome</label>
+            <input type="text" name="nome" id="full-name" placeholder="Digite seu nome completo" required class="form-control">
+        </div>
+        <div class="container mb-3">
+                <p class="lead">Tipo de palestra</p>
+                <div class="form-check mb-3">
+                    <input type="radio" name="type" id="radio-workshop" value="worshop" class="form-check-input">
+                    <label for="radio-workshop" class="form-check-label"> Workshop</label>
+                </div>
+                    
+                <div class="form-check mb-3">
+                    <input type="radio" name="type" id="radio-palco-principal" value="palco-principal" class="form-check-input">
+                    <label for="radio-palco-principal" class="form-check-label"> Palco Principal</label>
+                </div>
+            </div>
+        <div class="container mb-3">
+            <label for="camiseta" class="form-label">Tamanho da camiseta</label>
+            <select name="tamanho-camiseta" id="camiseta" class="form-select">
+                <option value="p">Pequeno</option>
+                <option value="m">Médio</option>
+                <option value="g">Grande</option>
+                <option value="gg">Extra Grande</option>
+            </select>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea name="abstract" id="abstract floatingTextarea" maxlength="300" class="form-control"></textarea>
+            <label for="abstract" >Resumo da palestra</label>
+        </div>
+        <div class="container mb-3">
+            <input type="checkbox" name="check" id="checkbox" class="form-check-input">
+            <label for="checkbox" class="form-label" class="form-check-label">Disponivel na data?</label>
+        </div>
+
+        <div class="container mb-3">
+            <button type="submit" class="btn btn-primary"> Enviar</button>
+            <button type="reset" class="btn btn-primary"> Limpar</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

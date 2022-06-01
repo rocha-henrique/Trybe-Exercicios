@@ -1,10 +1,16 @@
 // 3 - Interrompa o comportamento padrão do botão submit utilizando o método preventDefault(). Nossa amiga Carol Silva nos contou um pouco sobre como fazer isso, lembra?
+const buttonSubmit = document.querySelector('#btn-submit')
+let inputNameUser = document.querySelector('#nameUser')
+const nameUser = document.querySelector('#nome')
+
+function getUserValue(event) {
+    event.preventDefault();
+    console.log(inputNameUser.value);
+    nameUser.innerHTML = inputNameUser.value
+}
+buttonSubmit.addEventListener('click', getUserValue);
+
 // 4 -Crie um botão que limpe as informações contidas nos campos;
-
-
-
-
-
 
 
 
