@@ -1,0 +1,21 @@
+body {
+    background-color:  rgb(135, 135, 135);
+    margin: 40px auto;
+    max-width: 80%;
+}
+
+div {
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: aliceblue;
+    padding: 60px;
+}
+
+.container {
+    margin: 20px 0;
+}
+
+.form-select{
+    width: 40%;
+}

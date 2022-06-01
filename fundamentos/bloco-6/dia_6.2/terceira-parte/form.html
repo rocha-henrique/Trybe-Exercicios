@@ -1,0 +1,63 @@
+<!-- 1 -Adicione um framework CSS de sua escolha ao formulário que você construiu na última aula e o utilize para estilizar o formulário.
+Sugestões: Bulma, Bootstrap, Semantic UI e Materialize. -->
+
+
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>TrybeTrip</title>
+</head>
+<body class="text-center fs-4">
+    <form action="" method="get" class="container">
+        <div class="container mb-">
+            <label for="nameUser" id="nome">Nome: </label>
+            <input type="text" name="nome" class="form-control" id="nameUser" minlength="10" maxlength="40" placeholder="Digite seu nome completo">
+            <label for="form-email">Email: </label>
+            <input type="email" name="email" class="form-control" id="form-email" minlength="10" maxlength="50" placeholder="digite seu Email">
+        </div>
+
+        <div class="container-md mb-5">
+                <label for="type">Destino preferido: </label> <br> <br>
+                <input class="btn-check" type="radio" name="type" id="option1">
+                <label for="option1" class="btn btn-outline-primary">Cidade</label>
+                <input class="btn-check" type="radio" name="type" id="option2">
+                <label for="option2" class="btn btn-outline-primary">Campo</label>
+                <input class="btn-check" type="radio" name="type" id="option3">
+                <label for="option3" class="btn btn-outline-primary">Praia</label>
+                <input class="btn-check" type="radio" name="type" id="option4">
+                <label for="option4" class="btn btn-outline-primary">Montanhas</label>
+        </div>
+
+        <div class="container-md mb-5">
+            <label for="abstract">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label> <br>
+            <textarea name="abstract" id="abstract" maxlength="500" class="resp form-control"></textarea>
+        </div>
+
+        <div class="date container-md mb-5">
+            <fieldset>
+                <label for="">Qual a melhor data para realizar sua viagem?</label><br>
+                <label for="id-date">Data :</label>
+                <input type="date" name="date" id="id-date">
+            </fieldset>
+        </div>
+
+        <div class="form-check container-md mb-5">
+            <label for="firstCheck" class="form-check-label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            <input type="checkbox" class="form-check-input" name="check" id="firstCheck"><br>
+            <label for="secondCheck" class="form-check-label">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            <input type="checkbox" class="form-check-input" name="check" id="secondCheck">
+        </div>
+
+        <div class="container-md mb-5">
+            <button type="submit" id="btn-submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-primary">Apagar</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
