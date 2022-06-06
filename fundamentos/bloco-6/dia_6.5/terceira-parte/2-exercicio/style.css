@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+      font-size: x-large;
+  }
+
+  @media screen and (max-width: 420px) {
+    body {
+        font-size: 80%
+    }
+    body .title {
+        font-size: auto;
+        text-align: left;
+    }
+    .indice {
+        font-size: 2rem;
+        
+    }
+    h2, h3{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    p {
+        font-weight: 100;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+
+  @media screen and (min-width: 421px) {
+    body {
+        font-size: xx-large;
+    }
+    body .title {
+        font-weight: 700;
+        text-align: center;
+    }
+    .indice {
+        font-size: 3rem;
+    }
+    h2, h3{
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    p {
+        font-weight: 300;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: auto;
+    }
+  }

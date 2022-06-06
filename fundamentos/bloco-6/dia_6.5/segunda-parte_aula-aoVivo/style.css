@@ -30,7 +30,6 @@
     left: 0;
     padding: 20px 50px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   
@@ -55,12 +54,12 @@
   }
   
   .hero h1 {
-    font-size: 50px;
+    /* font-size: 50px; */
     margin-bottom: 15px;
   }
   
   .hero h3 {
-    font-size: 25px;
+    /* font-size: 25px; */
     margin-bottom: 15px;
   }
   
@@ -293,4 +292,70 @@
   
   footer ul li:nth-child(4) {
     /* order: -1; */
+  }
+  
+  
+  @media screen and (min-width: 601px) {
+    header{
+      justify-content: space-between;
+    }
+  
+    .hero h1 {
+      font-size: 50px;
+    }
+    
+    .hero h3 {
+      font-size: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    header nav {
+      display: none;
+    }
+  
+    header {
+      justify-content: center;
+    }
+  
+    .hero h1{
+      font-size: 30px;
+    }
+  
+    .hero h3{
+      font-size: 20px;
+    }
+  
+    .know-the-hotel .grid li.small, .know-the-hotel .grid li.large{
+      flex-basis: 100%;
+    }
+    
+    /* .know-the-hotel .grid li.large {
+      flex-basis: 100%;
+    } */
+  
+    .know-the-hotel {
+      padding: 100px 15px;
+    }
+  
+    .features .grid {
+      flex-direction: column;
+    }
+  
+    .features{
+      margin: 0 20px;
+    }
+  
+    .newsletter input{
+      margin-bottom: 20px;
+    }
+  
+    .newsletter form{
+      flex-direction: column;
+    }
+  
+    footer ul li a i {
+      font-size: 35px;
+    }
+  
   }
