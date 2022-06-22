@@ -10,9 +10,9 @@ console.log(typeof patientId);
 console.log(typeof patientAge); //Essa variavel não foi criada !!
 
 const base = 5;
-var height = 8;
-const area = base + height;
-const perimeter = area + area;
+const height = 8;
+const area = base * height;
+const perimeter = 5 + 5 + 8 + 8;
 
 console.log(area);
 console.log(perimeter);

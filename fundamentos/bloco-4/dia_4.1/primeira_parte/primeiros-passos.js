@@ -1,12 +1,18 @@
 const myName = "Henrique";
-const bithCity = "São Bernardo do Campo";
-var bithYear = 1999;
-
-var bithYear = 2030;
+let birthCity = "São Bernardo do Campo";
+let birthYear = 1999;
 
 console.log(myName);
-console.log(bithCity);
-console.log(bithYear);
+console.log(birthCity);
+console.log(birthYear);
+
+birthYear = 2030;
+
+console.log(birthYear);
+
+birthCity = "SP"
+
+console.log(birthCity);
 
 //Você saberia explicar por que recebemos uma mensagem de erro? 🤔
 
